@@ -16,6 +16,7 @@ RUN apt-get update
 RUN apt-get install -y --no-install-recommends esl-erlang
 RUN apt-get install -y --no-install-recommends elixir
 RUN apt-get install -y --no-install-recommends nodejs
+RUN apt-get install -y --no-install-recommends npm
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN mix local.hex --force
